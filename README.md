@@ -1,1 +1,1 @@
-# DSC40B_Homework3
+# DSC40B_Homework3 - Programming Problem 1 and 2
