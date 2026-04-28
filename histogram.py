@@ -1,4 +1,4 @@
-# Programming Problem 1
+# Homework 3: Programming Problem 1
 
 def histogram(points, bins):
     """

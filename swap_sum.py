@@ -1,4 +1,4 @@
-# Programming Problem 2
+# Homework 3:  Programming Problem 2
 
 def swap_sum(A, B):
     """
