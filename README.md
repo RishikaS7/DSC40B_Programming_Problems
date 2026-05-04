@@ -6,3 +6,6 @@ Programming Problem 2 - swap_sum.py
 
 Homework 4
 Programming Problem 1 - knn_distance.py
+
+Homework 5
+Programming Problem 1 - mode.py
