@@ -4,6 +4,8 @@ def mode(numbers):
     >>> mode(numbers)
     4
     """
+    if len(numbers) == 0:
+        return None
     counts = {}
     for i in numbers:
         if i not in counts:
