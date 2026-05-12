@@ -15,10 +15,10 @@ def assign_good_and_evil(graph):
     for node in graph.nodes:
         if node not in labels:
             labels[node] = 'good'
-            queue = [node]
+            pending = [node]
 
-            while queue:
-                current = queue.pop(0)
+            while pending:
+                current = pending.pop(0)
 
                 if labels[current] == 'good':
                     status = 'evil'
@@ -26,10 +26,9 @@ def assign_good_and_evil(graph):
                     status = 'good'
 
                 for neighbor in graph.neighbors(current):
-
                     if neighbor not in labels:
                         labels[neighbor] = status
-                        queue.append(neighbor)
+                        pending.append(neighbor)
                     elif labels[neighbor] != status:
                         return None
     return labels
