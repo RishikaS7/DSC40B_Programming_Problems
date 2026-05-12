@@ -9,3 +9,6 @@ Programming Problem 1 - knn_distance.py
 
 Homework 5
 Programming Problem 1 - mode.py
+
+Homework 6
+Programming Problem 1 -  assign_good_and_evil.py
