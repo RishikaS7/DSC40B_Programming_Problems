@@ -12,3 +12,7 @@ Programming Problem 1 - mode.py
 
 Homework 6
 Programming Problem 1 -  assign_good_and_evil.py
+
+Homework 7
+Programming Problem 1 -  biggest_descendent.py
+Programming Problem 2 - cluster.py

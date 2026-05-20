@@ -32,6 +32,3 @@ def assign_good_and_evil(graph):
                     elif labels[neighbor] != status:
                         return None
     return labels
-
-
- 
