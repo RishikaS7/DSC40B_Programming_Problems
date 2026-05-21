@@ -1,12 +1,12 @@
 import dsc40graph
 
-def cluster_help(u, graph, status, non_edges):
+def cluster_helper(u, graph, status, non_edges):
     nodes = []
     status[u] = "pending"
 
     for v in graph.neighbors(u):
         if (status[v] == "undiscovered" and (u, v) not in non_edges and (v, u) not in non_edges):
-            nodes += cluster_help(v, graph, status, non_edges)
+            nodes += cluster_helper(v, graph, status, non_edges)
 
     status[u] = "visited"
     nodes.append(u)
@@ -41,6 +41,6 @@ def cluster(graph, weights, level):
 
     for node in graph.nodes:
         if status[node] == "undiscovered":
-            clusters.append(frozenset(cluster_help(node, graph, status, non_edges)))
+            clusters.append(frozenset(cluster_helper(node, graph, status, non_edges)))
 
     return frozenset(clusters)
