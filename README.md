@@ -16,3 +16,7 @@ Programming Problem 1 -  assign_good_and_evil.py
 Homework 7
 Programming Problem 1 -  biggest_descendent.py
 Programming Problem 2 - cluster.py
+
+Super Homework
+Programming Problem 1 - slc.py
+Programming Problem 2 - min_ell_theta.py
