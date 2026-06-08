@@ -36,12 +36,9 @@ def slc(graph, d, k):
     clusters = {}
     for node in nodes:
         root = dsf.find_set(node)
-        clusters = {}
-        for node in nodes:
-            root = dsf.find_set(node)
-            if root not in clusters:
-                clusters[root] = set()
-            clusters[root].add(node)
+        if root not in clusters:
+            clusters[root] = set()
+        clusters[root].add(node)
 
     return frozenset(frozenset(cluster) for cluster in clusters.values())
 
